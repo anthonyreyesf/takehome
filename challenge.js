@@ -113,8 +113,7 @@ const createOutputFile = (output) => {
         return;
       }
 
-      console.log("Output file (output.txt) has been created.");
-      resolve();
+      resolve("Output file (output.txt) has been created.");
     });
   });
 };
@@ -162,3 +161,5 @@ const executeTakeHomeSolution = async () => {
 };
 
 executeTakeHomeSolution();
+
+module.exports = { processUserTokenTopUp };
