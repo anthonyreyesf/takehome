@@ -71,7 +71,9 @@ const formatOutput = (users, companies) => {
 
     emailedUsers.forEach((user) => {
       output += `\t${user.last_name}, ${user.first_name}, ${user.email}\n`;
-      output += `\t  Previous Token Balance: ${user.tokens - company.top_up}\n`;
+      output += `\t  Previous Token Balance: ${
+        user.active_status ? user.tokens - company.top_up : user.tokens
+      }\n`;
       output += `\t  New Token Balance: ${user.tokens}\n`;
     });
 
@@ -85,7 +87,9 @@ const formatOutput = (users, companies) => {
 
     notEmailedUsers.forEach((user) => {
       output += `\t${user.last_name}, ${user.first_name}, ${user.email}\n`;
-      output += `\t  Previous Token Balance: ${user.tokens - company.top_up}\n`;
+      output += `\t  Previous Token Balance: ${
+        user.active_status ? user.tokens - company.top_up : user.tokens
+      }\n`;
       output += `\t  New Token Balance: ${user.tokens}\n`;
     });
 

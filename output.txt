@@ -3,22 +3,22 @@ Company Name: Blue Cat Inc.
 Users Emailed:
 Users Not Emailed:
 	Pierce, Amanda, amanda.pierce@fake.com
-	  Previous Token Balance: -47
+	  Previous Token Balance: 24
 	  New Token Balance: 24
 	Beck, Terra, terra.beck@demo.com
-	  Previous Token Balance: -30
+	  Previous Token Balance: 41
 	  New Token Balance: 41
 	Jackson, Brian, brian.jackson@notreal.com
-	  Previous Token Balance: 29
+	  Previous Token Balance: 100
 	  New Token Balance: 100
 	Lynch, Eileen, eileen.lynch@fake.com
 	  Previous Token Balance: 40
 	  New Token Balance: 111
 	Fox, Fernando, fernando.fox@fake.com
-	  Previous Token Balance: -23
+	  Previous Token Balance: 48
 	  New Token Balance: 48
 	Gomez, Billy, billy.gomez@notreal.com
-	  Previous Token Balance: -32
+	  Previous Token Balance: 39
 	  New Token Balance: 39
 	Carr, Genesis, genesis.carr@demo.com
 	  Previous Token Balance: 71
@@ -29,10 +29,10 @@ Company Id: 2
 Company Name: Yellow Mouse Inc.
 Users Emailed:
 	Nichols, Tanya, tanya.nichols@test.com
-	  Previous Token Balance: -14
+	  Previous Token Balance: 23
 	  New Token Balance: 23
 	Simpson, Natalie, natalie.simpson@test.com
-	  Previous Token Balance: 52
+	  Previous Token Balance: 89
 	  New Token Balance: 89
 	Simpson, Edgar, edgar.simpson@notreal.com
 	  Previous Token Balance: 67
@@ -59,7 +59,7 @@ Users Emailed:
 	  Previous Token Balance: 37
 	  New Token Balance: 92
 	Robinson, Alexis, alexis.robinson@test.com
-	  Previous Token Balance: -10
+	  Previous Token Balance: 45
 	  New Token Balance: 45
 	Jimerson, Jim, jim.jimerson@test.com
 	  Previous Token Balance: 10
@@ -87,10 +87,10 @@ Users Not Emailed:
 	  Previous Token Balance: 96
 	  New Token Balance: 129
 	Wells, Bernard, bernard.wells@demo.com
-	  Previous Token Balance: 41
+	  Previous Token Balance: 74
 	  New Token Balance: 74
 	Obrien, Ava, ava.obrien@demo.com
-	  Previous Token Balance: 60
+	  Previous Token Balance: 93
 	  New Token Balance: 93
 	Gardner, Alexander, alexander.gardner@demo.com
 	  Previous Token Balance: 40
@@ -102,16 +102,16 @@ Users Not Emailed:
 	  Previous Token Balance: 25
 	  New Token Balance: 58
 	White, Rodney, rodney.white@fake.com
-	  Previous Token Balance: 20
+	  Previous Token Balance: 53
 	  New Token Balance: 53
 	Fisher, Kenzi, kenzi.fisher@demo.com
-	  Previous Token Balance: 18
+	  Previous Token Balance: 51
 	  New Token Balance: 51
 	Woods, Joy, joy.woods@test.com
-	  Previous Token Balance: -32
+	  Previous Token Balance: 1
 	  New Token Balance: 1
 	Perkins, Yvonne, yvonne.perkins@notreal.com
-	  Previous Token Balance: 18
+	  Previous Token Balance: 51
 	  New Token Balance: 51
 Total amount of top ups for Yellow Frog Inc.: 330
 
@@ -123,7 +123,7 @@ Users Emailed:
 	  New Token Balance: 101
 Users Not Emailed:
 	Barnes, Rodney, rodney.barnes@test.com
-	  Previous Token Balance: -39
+	  Previous Token Balance: 43
 	  New Token Balance: 43
 	Berry, Nicholas, nicholas.berry@notreal.com
 	  Previous Token Balance: 39
