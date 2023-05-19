@@ -58,44 +58,47 @@ const formatOutput = (users, companies) => {
   let output = "";
 
   companies.forEach((company) => {
+    const emailedUsers = users.filter(
+      (user) =>
+        user.company_id === company.id &&
+        user.email_status === true &&
+        user.active_status === true
+    );
+
+    const notEmailedUsers = users.filter(
+      (user) =>
+        user.company_id === company.id &&
+        user.email_status === false &&
+        user.active_status === true
+    );
+
+    if (emailedUsers.length === 0 && notEmailedUsers.length === 0) return null;
+
     output += `Company Id: ${company.id}\n`;
     output += `Company Name: ${company.name}\n`;
     output += `Users Emailed:\n`;
 
-    const emailedUsers = users.filter(
-      (user) =>
-        user.company_id === company.id &&
-        company.email_status === true &&
-        user.email_status === true
-    );
-
     emailedUsers.forEach((user) => {
+      let previousBalance = user.tokens - company.top_up;
+
       output += `\t${user.last_name}, ${user.first_name}, ${user.email}\n`;
-      output += `\t  Previous Token Balance: ${
-        user.active_status ? user.tokens - company.top_up : user.tokens
-      }\n`;
+      output += `\t  Previous Token Balance: ${previousBalance}\n`;
       output += `\t  New Token Balance: ${user.tokens}\n`;
     });
 
     output += `Users Not Emailed:\n`;
 
-    const notEmailedUsers = users.filter(
-      (user) =>
-        user.company_id === company.id &&
-        (company.email_status === false || user.email_status === false)
-    );
-
     notEmailedUsers.forEach((user) => {
+      let previousBalance = user.tokens - company.top_up;
+
       output += `\t${user.last_name}, ${user.first_name}, ${user.email}\n`;
-      output += `\t  Previous Token Balance: ${
-        user.active_status ? user.tokens - company.top_up : user.tokens
-      }\n`;
+      output += `\t  Previous Token Balance: ${previousBalance}\n`;
       output += `\t  New Token Balance: ${user.tokens}\n`;
     });
 
     output += `Total amount of top ups for ${company.name}: ${
       company.top_up * (emailedUsers.length + notEmailedUsers.length)
-    }\n\n`;
+    }\n\n\n`;
   });
 
   // Remove trailing whitespace
